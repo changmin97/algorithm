@@ -6,5 +6,22 @@
 </head>
 <body>
 
+<script>
+
+function solution(participant, completion) {
+    participant.sort()  // sort왼쪽처럼 쓰면 자동 오름차순
+    completion.sort()
+    for (let i = 0; i < participant.length; i++) {
+        if (participant[i] !== completion[i]) {
+            return participant[i]
+        }
+    }
+}
+
+만약에 탈락자들 여러명 있으면
+새 배열 만들어놓고 다를경우 participant[i] 값만 푸쉬
+
+</script>
+
 </body>
 </html>
