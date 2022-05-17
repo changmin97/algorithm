@@ -7,16 +7,16 @@
 <body>
 <script>
 
-    function solution(s) {
+function solution(s) {
     let long = s.length
-        if(long % 2 === 1) {
-            let center_index = parseInt((long / 2))
-            return (s[center_index])
-        }else if(long % 2 === 0){
-            let center_index1 = (long/2)-1
-            let center_index2 = center_index1 + 1
-            return(s[center_index1]+s[center_index2])
-        }
+    if (long % 2 === 1) {
+        let center_index = parseInt((long / 2))
+        return (s[center_index])
+    } else if (long % 2 === 0) {
+        let center_index1 = (long / 2) - 1
+        let center_index2 = center_index1 + 1
+        return (s[center_index1] + s[center_index2])
+    }
 }
 </script>
 
