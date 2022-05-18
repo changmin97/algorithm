@@ -7,14 +7,14 @@
 <body>
 
 <script>
+꿀팁: 숫자+""하면 "숫자" 됨
 꿀팁: 문자열숫자를 ""로 나누면 배열로 담김!!!
 ex) let n = 1234
     Stinrg(n).split('')  //리턴값: ['1', '2', '3', '4']
 
-원래는 빈배열만들고 for문이용하여 하나씩 배열안에 push 해줬었음 ,
  풀이1)
-    function solution(n) {
-    return +(String(n).split('').map(item => +item).sort((a,b)=>b-a).join(''))
+function solution(n) {
+    return parseInt( (n+"").split('').sort((a,b)=>(b-a)).join('') )
 }
 
 
@@ -34,7 +34,6 @@ ex) let n = 1234
     return parseInt(answer2)
 }
 
-간단한 풀이
 
 
 </script>

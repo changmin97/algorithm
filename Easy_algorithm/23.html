@@ -9,27 +9,15 @@
 <script>
 
 function solution(n) {
-    return String(n).split('').reverse().map(item => +item)
+    return String(n).split('').reverse().map(v => +v)
 }
-// 설명
-// 22번 문제와 방법은 유사하다.
-// 입력받은 n을 String으로 변환하여 각 자리 수를 요소로 가진 배열로 .split()을 해준다.
-// 그리고 .reverse()하여 순서를 뒤집고,
-// .map()을 돌며 다시 숫자로 변환하여 return한다.
-
-
-
-
-//잘못된 풀이 :  0<number<10 에서만 가능 10부터오류남
-//            이유: 10을 string으로 바꾸면서 1,0으로 나눠서 보게됨
-// function solution(number) {
-//     let long = String(number).length
-//     let arr = []
-//     for(let i = 0; i < long; i++){
-//         arr.push(long - i)
-//     }
-//     return arr
-// }
+설명
+n= 1234 일떄
+String(n).split('').reverse() 까지는 ['4','3','2','1']이고
+String(n).split('').reverse().map(v=> +v) 하면 [4,3,2,1] 이 된다.
+    .map(v=> +v) 대신 .map( v=>parseInt(v) )
+                     .map( v=> v/1 )
+                     .map( v=> v*1 ) 도 가능
 
 </script>
 
