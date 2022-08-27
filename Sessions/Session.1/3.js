@@ -11,8 +11,7 @@ const solution = function(N){
 solution(178)
 
 // function solution(n){
-//     let answer = Math.ceil(n/12);
-//     console.log(answer)
+//     console.log(Math.ceil(n/12))
 // }
 
 // Math.ceil(2.xx) === 3 항상 올림
